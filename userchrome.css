@@ -1,0 +1,153 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+
+/* Colors: #383c4a, #2F343F, #aaa and base theme can be changed to adapt for different looks */
+
+
+#identity-icon-label
+{
+  display: none !important;
+}
+#identity-icon-country-label
+{
+  display: none !important;
+}
+/* стиль кнопок закрытия */
+#TabsToolbar .tab-text {
+  
+  margin-left: 6px !important;
+}
+
+
+/* кнопка закрытия вкладки слева */
+#TabsToolbar .tab-close-button { 
+  -moz-box-ordinal-group: 0 !important; 
+  margin-left: -3px !important;
+}
+
+#TabsToolbar .tab-icon-image:not([pinned])
+{
+  margin-left: 10px;
+}
+/* стиль кнопок закрытия */
+.tabbrowser-tab .close-icon {
+   fill: white !important;
+  background-color: white !important;
+  border-radius: 10px;
+  height: 13px !important;
+  
+  
+ }
+ .tabbrowser-tab .close-icon[selected="true"]{
+   fill: black  !important;
+   background-color: #ED655A !important;
+   border-radius: 10px;
+ }
+ .tabbrowser-tab .close-icon:hover {
+   fill: black  !important;
+   background-color: #ED655A !important;
+   border-radius: 10px;
+ }
+
+/* фон активной вкладки*/
+.tabbrowser-tab[selected="true"] .tab-background {
+  background-color: #2F343F !important;
+  background-image: none !important;
+  
+}
+
+/* верхняя линия на вкладке */
+.tab-line[selected="true"] {
+  display: none !important;
+}
+/* верхняя линия на вкладке */
+.tab-line {
+  display: none !important;
+}
+
+/* фон панели закладок */
+#personal-bookmarks {
+  background: #2F343F !important;
+  height: 30px !important;
+}
+
+#pageActionButton, #star-button-box, #forward-button {
+display: none !important;
+}
+
+#TabsToolbar { 
+margin: 0px 44px 0px 31vw !important;
+height: 35px !important;
+padding-left: 0px !important;
+background: #383c4a !important;
+  padding-top: 8px !important;
+}
+
+
+#nav-bar { 
+
+margin: -30px 65vw 0px 70px !important;
+height: 35px !important;
+}
+
+#nav-bar-customization-target {
+background: #383c4a !important;
+}
+
+#navigator-toolbox {
+background: #383c4a !important;
+}
+
+#urlbar,#urlbar-container {
+background: none !important;
+
+margin-left: 1px !important;
+min-width: 200px !important;
+font-size: 11px !important;
+background: #383c4a !important;
+}
+#urlbar{
+background:none !important;
+
+box-shadow:none !important;
+background: #2F343F !important;
+}
+#urlbar:hover {
+background:none !important;
+
+box-shadow:none !important;
+background: #2F343F !important;
+}
+
+#urlbar[focused="true"] {
+background: none !important;
+
+box-shadow: none !important;
+background: #2F343F !important;
+}
+
+
+
+
+
+/* Standard folder */
+#bookmarks-view treechildren::-moz-tree-image(container),
+#PlacesToolbarItems toolbarbutton[container="true"] .toolbarbutton-icon,
+#PlacesToolbarItems menu[container="true"] .menu-iconic-left,
+#BMB_bookmarksPopup menu[container="true"] .menu-iconic-icon {
+  fill: white !important; /* slightly muted gold */
+}
+
+/* Affix hamburger menu to top right */
+
+#PanelUI-button{
+	background: #383c4a !important;
+}
+
+/* Removed space before the first tab
+ * Удалено пространство перед первой вкладкой  */
+
+.titlebar-placeholder[type="pre-tabs"],
+.titlebar-placeholder[type="post-tabs"] {
+    display: none!important
+}
